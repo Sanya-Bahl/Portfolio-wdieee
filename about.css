@@ -1,0 +1,87 @@
+body{
+    padding:0;
+    margin:0;
+}
+
+.navbar{
+    min-height:65px;
+    background:black;
+    color:white;
+    
+    
+}
+.navbar ul{
+    display: flex;
+    justify-content:space-evenly;
+    
+}
+.navbar ul li{
+    margin:20px 5px 20px 5px;
+    list-style: none;
+    padding: 4px;
+
+}
+.navbar ul li:hover{
+    background-color: white;
+    color:black;
+    transition: all 400ms ease-in-out;
+    cursor: pointer;
+    border-radius: 10%;
+    transform: scale(1.2);
+}
+
+
+.aboutme .container{
+    display: flex;
+    align-items:center;   
+    padding: 18px;
+    margin-bottom:3px ;
+}
+
+
+
+  .aboutme .container .leftSubSection {
+    position: relative;
+    flex: 50%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    min-height: calc(87vh - 65px);  
+    text-align: center; 
+  }
+  .aboutme .container .leftSubSection img{
+      border-radius: 50%;
+
+  }
+  .aboutme .container .leftSubSection .social-links{
+    position: absolute;
+    bottom: 12px;
+    min-width: 96%;
+    display: flex;
+    justify-content: space-around;
+      
+  }
+  .aboutme .container .leftSubSection .social-links a{
+      font-size: 40px;
+      color:rgb(93, 93, 230);
+      transition: all 250ms ease-in;
+     }
+  .aboutme .container .leftSubSection .social-links a:hover{
+    transform: scale(1.2);
+    color:cadetblue;
+
+}
+.aboutme .container .leftSubSection .name{
+    margin-top: 42px;
+    font-size: 32px;
+}
+  .aboutme .container .rightSubSection{
+    flex: 50%;
+    padding: 20px;
+    min-height: calc(87vh - 65px);
+    color:rgb(45, 45, 118);
+}
+
+.aboutme .container .rightSubSection p{
+    margin-top: 3.7rem;
+
+}
