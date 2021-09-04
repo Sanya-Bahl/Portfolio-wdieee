@@ -1,9 +1,10 @@
 <html>
     <head>
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
         <title>
             .My Portfolio.
         </title>
-        <link rel="stylesheet" type="text/css" href="about.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
@@ -11,13 +12,65 @@
     </head>
 
     <body>
-        <nav class="navbar">
-            <ul class>
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <li>Item 4</li>
-            </nav>
+          
+        
+    <header id="body-header">
+        <nav>
+            <div class = "dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class ="dropdown-list nav-menu">
+                    <ul class = "no-list-style">
+                        <li >
+                            <a href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#about"> About </a>
+                        </li>
+                        <li>
+                            <a href="#skills"> Skills </a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#resume">Resume</a>
+                        </li>
+                       
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    </div>
+
+             </div>   
+
+            <ul class="no-list-style horizontal-list text-center nav-menu"> 
+                <li>
+                    <a href="#"> Home </a>
+                </li>
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills"> Skills </a>
+                </li>
+                <li>
+                    <a href="#project">Projects</a>
+                </li> 
+                <li>
+                    <a href="#resume">Resume</a>
+                </li> 
+                
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+    </main>
+
 
             <div class="aboutme">
                 <div class="container">
@@ -42,6 +95,147 @@
                 </div>
 
             </div>
+            <hr style="position: relative; top:9vh">
+            <h1 style="position: relative; top:7vh" align="center">Skills</h1>
+            <section
+      class="skills"
+      style="display: flex; flex-direction: row; justify-content: space-around" 
+    >
+    
+      <div class="container-1" style="position: relative; left: 2vw;" >
+        <h1 class="heading">Languages</h1>
+        <div class="flex-container">
+          <div class="col">
+            <img
+              src="asset/c.png"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="100"></div>
+            </div>
+          </div>
 
+          <div class="col">
+            <img
+              src="asset/js.jpg"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="90"></div>
+            </div>
+          </div>
+          <div class="col">
+            <img
+              src="asset/c++.jpg"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="80"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-container">
+          <div class="col">
+            <img
+              src="asset/java.jpg"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="70"></div>
+            </div>
+          </div>
+          <div class="col">
+            <img
+              src="asset/python.png"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="60"></div>
+            </div>
+          </div>
+          <div class="col">
+            <img
+              src="asset/html.png"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="50"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container" >
+        <h1 class="heading">Softwares</h1>
+        <div class="flex-container">
+          <div class="col">
+            <img
+              src="asset/git.png"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="40"></div>
+            </div>
+          </div>
+
+          <div class="col">
+            <img
+              src="asset/MATLAB.jpg"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="30"></div>
+            </div>
+          </div>
+          <div class="col">
+            <img
+              src="asset/vscode.jpg"
+              height="55px"
+              width="55px"
+              style="border-radius: 50%; border: 1px solid black"
+              alt="a"
+            />
+            <p class="counter" align="center">h</p>
+            <div class="skillbar">
+              <div class="progress-bar" data-percent="20"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+           
         </body>
+        <script src="script.js"></script>
 </html>

@@ -1,0 +1,266 @@
+body {
+    margin: 0px;
+    
+    padding: 0;
+}
+
+ 
+/* Body Header */
+
+#body-header {
+    height: 9vh;
+    opacity: 0.8;
+    background-color: black;
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* padding-top: 1.2rem; */
+}
+
+
+
+/* Horizontal Lists */
+
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 3rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list {
+    padding-left: 0px;
+    margin: 0px;
+    position: relative; 
+    top: 3vh;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 0px 0px;
+    padding-left: 2vw;
+}
+
+
+.nav-menu li a {
+    transition: color 0.5s, border-bottom 4s;
+    font-size: 1.1rem;
+}
+
+.nav-menu li a:hover {
+    color: lightgrey;
+    border-bottom: 1px solid black;
+}
+
+
+@media only screen and (max-width: 572px) {
+    
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+/* homepage begins */
+.aboutme .container{
+    display: flex;
+    align-items:center;   
+    padding: 18px;
+    margin-bottom:3px ;
+}
+
+
+  .aboutme .container .leftSubSection {
+    position: relative;
+    flex: 50%;
+    top: 45px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    min-height: calc(87vh - 65px);  
+    text-align: center; 
+    box-shadow: 5px 10px #a8a7a7;
+  }
+  .aboutme .container .leftSubSection img{
+      border-radius: 50%;
+
+  }
+  .aboutme .container .leftSubSection .social-links{
+    position: absolute;
+    bottom: 12px;
+    min-width: 96%;
+    display: flex;
+    justify-content: space-around;
+      
+  }
+  .aboutme .container .leftSubSection .social-links a{
+      font-size: 40px;
+      color:rgb(93, 93, 230);
+      transition: all 250ms ease-in;
+     }
+  .aboutme .container .leftSubSection .social-links a:hover{
+    transform: scale(1.2);
+    color:cadetblue;
+
+}
+.aboutme .container .leftSubSection .name{
+    margin-top: 42px;
+    font-size: 32px;
+}
+  .aboutme .container .rightSubSection{
+    flex: 50%;
+    padding: 20px;
+    min-height: calc(87vh - 65px);
+    color:rgb(45, 45, 118);
+}
+
+.aboutme .container .rightSubSection p{
+    margin-top: 3.7rem;
+}
+
+
+
+
+/* Skills - progress bar */
+.skills
+{
+    padding-bottom: 6vh;
+    height: auto;
+    position: relative;
+    top: 1vh;
+}
+.skillbar
+{
+    position: relative;
+    height: 17px;
+    width: 100px;
+   background-color:rgb(228, 182, 156);
+    top: 4px;
+    z-index: 56;
+    border-radius: 41px;
+}
+.progress-bar
+{
+    position: absolute;
+    height: 100%;
+    width: 0px;
+    background-image: linear-gradient(to left, rgb(131, 129, 129), black);
+    display: flex;
+    justify-content: center;
+    border-radius: 41px;
+    align-items: center;
+}
+.heading
+{
+    position: relative;
+    top: 7vh;
+    padding-bottom: 5vh;
+}
+.col
+{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+   
+}
+.counter
+{
+   
+    position: relative;
+    color: black;
+    margin-top: 25px;
+}
+.flex-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;  
+   height: auto;
+   margin-top: 72px;
+  
+}
+
+@media only screen and (max-width: 768px) {
+    .flex-container
+{
+    
+    grid-template-columns: auto;
+      
+  
+}
+.col
+{
+    padding-top: 36px;
+    margin-top: -10px;
+}
+
+  }
+
+  @media only screen and (min-width: 1600px) {
+   
+    .flex-container
+{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 115px;  
+   height: auto;
+   margin-top: 72px;
+  
+}
+  }
