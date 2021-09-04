@@ -1,0 +1,52 @@
+
+            *{
+                box-sizing: border-box;
+            }
+
+            footer{
+                text-align: center;
+                background-color: black;
+                color: wheat;
+                padding: 25px;
+            }
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            .column {
+                float: left;
+                width: 33.33%;
+                padding: 30px 200px 30px 200px;
+                height: 100px;      
+            }
+
+            a:link, a:visited{
+                color: white;
+                text-decoration: none;
+            }
+            a:hover{
+                color: wheat;
+            }
+
+            .image{
+                opacity: 1;
+                width: 50px;
+                height: 50px;
+                transition: 0.2s ease;
+                backface-visibility: hidden;
+            }
+
+            .content:hover .image{
+                opacity: 0.7;
+            }
+
+            /* Responsive Web Design : If width less than 600px then stack on each other*/
+            @media screen and (max-width: 600px) {
+                .column {
+                    width: 100%;
+                    padding: 30px 0px 30px 0px;
+                }
+            }
