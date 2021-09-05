@@ -14,12 +14,11 @@ function isInViewport(el) {
 //We declare the element we want to check is in viewport (in this case the div="skillbar")
 const skills = document.querySelector('.skillbar');
 
-var proceed = 1;
-
-document.addEventListener('scroll', function () {
-  
+function progressBar(){
+    
+  console.log("ran");
   // If 'skills' is showing in our current view, then go ahead to load the progress bar
-  if (isInViewport(skills) && proceed)
+  if (isInViewport(skills))
   {
     // Main code for progress bar: 
 
@@ -59,7 +58,10 @@ document.addEventListener('scroll', function () {
     }
     // Code for progess bar ends here
 
-    //To prevent the function from running again, it stops when we find 'skills'
-    proceed = 0;
+    //To stop from further detecting any more scrolls
+    document.removeEventListener('scroll', progressBar)
   }
-});
+}
+
+//When scrolled call the progressBar function
+document.addEventListener('scroll', progressBar);
