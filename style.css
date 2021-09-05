@@ -28,6 +28,9 @@ body {
     margin: 0;
     margin-right: 5%;
     display: none;
+    position: relative;
+    top: 2vh;
+   
 }
 
 .bars i {
@@ -51,6 +54,7 @@ body {
     display: block;
     position: absolute;
     right: 3%;
+    top: 0;
 }
 
 .dropdown-list li{
