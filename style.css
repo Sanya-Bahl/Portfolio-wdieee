@@ -1,7 +1,8 @@
 body {
     margin: 0px;
-   
+    box-sizing: border-box;
     padding: 0;
+    
 }
 
 
@@ -118,29 +119,30 @@ body {
 
 
 /* homepage begins */
-.aboutme .container{
+#aboutme .container{
     display: flex;
+    flex-direction: row;
     align-items:center;   
     padding: 18px;
     margin-bottom:3px ;
 }
 
 
-  .aboutme .container .leftSubSection {
+  #aboutme .container .leftSubSection {
     position: relative;
     flex: 50%;
     top: 45px;
     background-color: #f1f1f1;
     padding: 20px;
-    min-height: calc(87vh - 65px);  
+    height: 80vh;  
     text-align: center; 
     box-shadow: 5px 10px #a8a7a7;
   }
-  .aboutme .container .leftSubSection img{
+  #aboutme .container .leftSubSection img{
       border-radius: 50%;
 
   }
-  .aboutme .container .leftSubSection .social-links{
+  #aboutme .container .leftSubSection .social-links{
     position: absolute;
     bottom: 12px;
     min-width: 96%;
@@ -148,29 +150,67 @@ body {
     justify-content: space-around;
       
   }
-  .aboutme .container .leftSubSection .social-links a{
+  #aboutme .container .leftSubSection .social-links a{
       font-size: 40px;
       color:rgb(93, 93, 230);
       transition: all 250ms ease-in;
      }
-  .aboutme .container .leftSubSection .social-links a:hover{
+  #aboutme .container .leftSubSection .social-links a:hover{
     transform: scale(1.2);
     color:cadetblue;
 
 }
-.aboutme .container .leftSubSection .name{
+#aboutme .container .leftSubSection .name{
     margin-top: 42px;
     font-size: 32px;
 }
-  .aboutme .container .rightSubSection{
+  #aboutme .container .rightSubSection{
     flex: 50%;
     padding: 20px;
-    min-height: calc(87vh - 65px);
+    height: calc(87vh - 65px);
     color:rgb(45, 45, 118);
 }
 
-.aboutme .container .rightSubSection p{
+#aboutme .container .rightSubSection p{
     margin-top: 3.7rem;
+}
+@media screen and (max-width: 1024px) {
+    #aboutme .container{
+        display: flex;
+        flex-direction: column;
+        align-items:center;   
+        padding: 18px;
+        height: auto;
+        margin-bottom:3px ;
+        position: relative;
+        top:5vh
+    }
+   
+    #aboutme .container .rightSubSection{
+     
+        padding: 20px;
+        position: relative;
+        color:rgb(45, 45, 118);
+        
+    }
+    #aboutme .container .leftSubSection {
+        position: relative;
+        width: 90%;
+        height: fit-content;
+        top: 45px;
+        background-color: #f1f1f1;
+        padding: 20px;
+        text-align: center; 
+        box-shadow: 5px 10px #a8a7a7;
+      }
+      #aboutme .container .leftSubSection .social-links{
+       
+        position: relative;
+        top: 36px;
+        padding-bottom: 25px;
+    
+      }
+    
 }
 
 hr
@@ -188,8 +228,9 @@ hr
     
     height: auto;
     position: relative;
-   
+    top: 3vh;
 }
+
 .skillbar
 {
     position: relative;
@@ -214,7 +255,7 @@ hr
 .heading
 {
     position: relative;
-    top: 7vh;
+  
     padding-bottom: 5vh;
 }
 .col
@@ -238,11 +279,15 @@ hr
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 20px;  
-   height: auto;
-   margin-top: 7vh;
-   
+   height: auto;  
   
 }
+.p-2
+{
+    margin-top: 4vh;
+}
+
+
 
 @media only screen and (max-width: 768px) {
     .flex-container
@@ -272,10 +317,71 @@ hr
   
 }
   }
-  *{
-    box-sizing: border-box;
-}
 
+/* projects */
+#project{
+    
+    /* min-height:100vh; */
+    position: relative;
+    top: 5vh;
+    height: auto;
+    padding-bottom: 5vh;
+}
+#project .row{
+    width:90%;
+    margin:auto;
+}
+#project .row .heading-section{
+    width:60%;
+    text-align:center;
+    margin:auto;
+}
+ #project .row .heading-section h1{
+     padding-top:30px;
+     font-size: 42px;
+ }
+ #project .row .heading-section p {
+     margin-top:15px;
+     color:#3d3d3d;
+     font-size:25px;
+     line-height:1.5;
+ }
+ .content-section{
+     display: flex;
+     justify-content:center;
+     align-items:center;
+     margin:auto;
+ }
+ .content-section .card{
+     flex:1;
+     margin: 30px 20px;
+
+ }
+ .content-section .card img {
+         width: 100%;
+         height: auto;
+         border-style: solid;
+         border-width: 5px;
+     }
+ .content-section .card h2{
+     margin-top: 30px;
+     }
+ .content-section .card p{
+     margin-top:20px;
+     color:#3d3d3d;
+     line-height: 1.5;
+ }
+ @media screen and (max-width: 768px){
+     .content-section{
+         flex-direction:column;
+     }
+ }
+ #project .row .heading-section span {
+     color: red;
+ }
+
+
+/* footer  */
 footer{
     text-align: center;
     background-color: black;
@@ -283,10 +389,15 @@ footer{
     padding: 25px;
 }
 
-.row:after {
+.row-f:after {
     content: "";
     display: table;
     clear: both;
+}
+.row-f
+{
+    display: flex;
+    flex-direction: row;
 }
 
 .column {
