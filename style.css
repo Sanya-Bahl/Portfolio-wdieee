@@ -123,6 +123,7 @@ body {
 
 
 /* homepage begins */
+
 #aboutme .container{
     display: flex;
     flex-direction: row;
@@ -174,10 +175,8 @@ body {
     color:rgb(45, 45, 118); 
     position: relative;
     flex: 50%;
-    
-    
     padding: 20px;
-    height: 500px;  
+    height: 45%;  
   
   
 }
@@ -194,7 +193,8 @@ body {
         height: auto;
         margin-bottom:3px ;
         position: relative;
-        top:5vh
+        justify-content: center;
+        
     }
    
     #aboutme .container .rightSubSection{
@@ -207,7 +207,7 @@ body {
     }
     #aboutme .container .leftSubSection {
         position: relative;
-        width: 90%;
+        width: 80%;
         height: fit-content;
         top: 45px;
         background-color: #f1f1f1;
@@ -239,7 +239,6 @@ hr
 {
     
     height: auto;
-   
     padding-bottom: 38px;
 }
 
@@ -384,6 +383,8 @@ hr
  @media screen and (max-width: 768px){
      .content-section{
          flex-direction:column;
+         position: relative;
+         padding-bottom: 18px;
      }
  }
  #project .row .heading-section span {
