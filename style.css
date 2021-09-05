@@ -9,7 +9,7 @@ body {
 /* Body Header */
 
 #body-header {
-    height: 9vh;
+    height: 47px;
     opacity: 0.8;
     background-color: black;
 
@@ -29,7 +29,7 @@ body {
     margin-right: 5%;
     display: none;
     position: relative;
-    top: 2vh;
+    top: 5px;
    
 }
 
@@ -80,7 +80,7 @@ body {
     padding-left: 0px;
     margin: 0px;
     position: relative; 
-    top: 3vh;
+    top: 12px;
 }
 
 .horizontal-list li {
@@ -129,6 +129,7 @@ body {
     align-items:center;   
     padding: 18px;
     margin-bottom:3px ;
+    
 }
 
 
@@ -138,7 +139,7 @@ body {
     top: 45px;
     background-color: #f1f1f1;
     padding: 20px;
-    height: 80vh;  
+    height: 500px;  
     text-align: center; 
     box-shadow: 5px 10px #a8a7a7;
   }
@@ -193,7 +194,8 @@ body {
     #aboutme .container .rightSubSection{
      
         padding: 20px;
-        position: relative;
+        height: 500px;  
+        
         color:rgb(45, 45, 118);
         
     }
@@ -231,8 +233,8 @@ hr
 {
     
     height: auto;
-    position: relative;
-    top: 3vh;
+   
+    padding-bottom: 38px;
 }
 
 .skillbar
@@ -260,7 +262,7 @@ hr
 {
     position: relative;
   
-    padding-bottom: 5vh;
+    padding-bottom: 4px;
 }
 .col
 {
@@ -288,9 +290,8 @@ hr
 }
 .p-2
 {
-    margin-top: 4vh;
+    margin-top: 41px;
 }
-
 
 
 @media only screen and (max-width: 768px) {
@@ -326,10 +327,9 @@ hr
 #project{
     
     /* min-height:100vh; */
-    position: relative;
-    top: 5vh;
+  
     height: auto;
-    padding-bottom: 5vh;
+    padding-bottom: 18px;
 }
 #project .row{
     width:90%;
